@@ -13,4 +13,5 @@ I'm learning Git and version control to track my work.
 - Git Tracks CHANGES To Files Over Time
 - Branches let us experiment WITHOUT affecting the main project.
 - We can MERGE branches back together WHEN ready.
+- 
 ```
