@@ -8,7 +8,7 @@ This file documents the Git Undo and Recovery Tools, I have learned.
 - git reset --mixed Head~1: undo last commit, keep changes in working directory (default)
 - git reset --hard Head~1: undo last commit and discard all changes (dangerous!)
 
-- Only use reset on commit that have not been pushed.
+- Only SAFELY use reset on commit that have not been pushed
 
 ## Revert
 
