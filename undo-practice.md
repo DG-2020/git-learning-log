@@ -14,3 +14,9 @@ This File Documents the GIT UNDO and RECOVERY TOOLS I have Learned.
 - "GIT REVERT HEAD": Create a New Commit that undoes the Last Commit;
 - "GIT REVERT" is Safe for Shared/Pushed Branches because it doesn't Rewrite History;
 - The Original Commit stays in the Log, <PLUS> a New "UNDO" Commit is ADDED;
+
+## Reflog
+
+- "GIT REFLOG": Shows everywhere HEAD has pointed (Commits, Resets, Checkouts);
+- Reflog entries last about 90 Days before being Garbage Collected;
+- To Recover: Find the SHA in Reflog, then GIT BRANCH <NAME> <SHA>;
