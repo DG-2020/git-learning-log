@@ -26,5 +26,3 @@ This File Documents the GIT UNDO and RECOVERY TOOLS I have Learned.
 - GIT CHERRY-PICK <SHA>: Apply a Specific Commit to the Current Branch;
 - Creates a New Commit with the Same Changes but a Different SHA;
 - Use for HOTFIXES: Fix on Feature Branch, Cherry-Pick to MAIN (i.e.ShubhoSaysHi);
-
-- WRONG: Always ReBase Shared Branches to Keep HISTORY Clean;
