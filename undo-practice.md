@@ -34,3 +34,12 @@ This File Documents the GIT UNDO and RECOVERY TOOLS I have Learned.
 - "GIT BISECT GOOD <REF>": Mark a KNOWN-GOOD Commit;
 - Git Checks Out Middle Commits; We Test and Mark Good/Bad;
 - "GIT BISECT RESET": End the Session and Return to original HEAD;
+
+## Tags
+
+- "GIT TAG - A V1.0 -M <message>": Create an Annotated Tag (Stores Tagger, Date, Message);
+- "GIT TAG V1.0": Create a Lightweight Tag (Just a Pointer, No MetaData);
+- "GIT PUSH ORIGIN V1.0": Push a Specific Tag to Remote;
+- "GIT PUSH --TAGS": Push All Tags;
+- Annotated Tags are for Releases, Lightweight Tags are for Private/Temporary Labels;
+- CI/CD Pipelines often Trigger on New Tags;  
