@@ -20,3 +20,9 @@ This File Documents the GIT UNDO and RECOVERY TOOLS I have Learned.
 - "GIT REFLOG": Shows everywhere HEAD has pointed (Commits, Resets, Checkouts);
 - Reflog entries last about 90 Days before being Garbage Collected;
 - To Recover: Find the SHA in Reflog, then GIT BRANCH <NAME> <SHA>;
+
+## Cherry-Pick
+
+- GIT CHERRY-PICK <SHA>: Apply a Specific Commit to the Current Branch;
+- Creates a New Commit with the Same Changes but a Different SHA;
+- Use for HOTFIXES: Fix on Feature Branch, Cherry-Pick to MAIN (i.e.ShubhoSaysHi);
