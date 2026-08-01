@@ -4,7 +4,7 @@
 
 - I prefer REBASING Feature Branches for a Clean Linear History.
 - I RESOLVE Conflicts by COMBINING the Best of Both Changes.
-- I use INTERACTIVE REBASE to Polish Commits BEFORE Opening a PR.
+- I use Interctive REBASE to Polish Commits BEFORE Opening a PR.
 
 ## Tools I Use
 
