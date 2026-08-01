@@ -12,6 +12,8 @@
 - GitHub for COLLABORATION.
 
 ## Lessons Learned
+
 - MERGE CONFLICTS are Normal and Not Scary.
 - REBASE Rewrites History, so only use it on Local Branches.
 - Interactive Rebase is Powerful for cleaning up work BEFORE Sharing.
+- Git Stash is a LIFESAVR for Context Switching.
