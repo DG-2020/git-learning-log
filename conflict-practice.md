@@ -1,3 +1,7 @@
 # Conflict Practice
 
-- This file is for 'Practicing' "MERGE Conflict Resolution".
+## Tools I Use
+
+- Cursor for EDITING.
+- Git CLI for VERSION CONTROL.
+- GitHub for COLLABORATION.
