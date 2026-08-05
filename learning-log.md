@@ -31,3 +31,5 @@ I'm learning Git and version control to track my work.
 - Learn about REBASING and Interactive REBASE;
 - Explore GitHub Actions for Automation;
 - Practice Contributing to Open Source Projects;
+
+- PR Templates SAVE TIME on Every Future Pull Request.
