@@ -1,0 +1,32 @@
+name: multi-agent-orchestration
+
+on:
+    workflow_dispatch:
+
+jobs:
+    spec_analyzer:
+        runs_on: ubuntu-latest
+        steps:
+            - name: Run Spec Analyzer
+            - run: ./executors/spec_analyzer.sh
+    
+    risk_reviewer:
+        runs_on: ubuntu-latest
+        steps:
+            - name: Run Risk Reviewer
+            - run: ./executors/risk_reviewer.sh
+
+    plan_merger:
+        runs_on: ubuntu-latest
+        needs: [spec_analyzer, risk_reviewer]  # <--- FANS IN both
+        steps:
+            - name: Merge Analysis and Risk Outputs
+              run: ./executors/plan_merger.sh
+            - name: Publish Merge Plan
+              run: echo "Publish Plan Artifact"
+        concurrency:
+            group: multiagent-${{ github.ref }} # <--- Ensures No Overlapping Merge Jobs Per Branch  
+    
+
+
+    

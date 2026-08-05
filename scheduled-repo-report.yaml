@@ -1,0 +1,30 @@
+# File: .github/workflows/daily-repo-report.yml
+
+name: Daily Repo Status Report (Artifact + Controlled Output)
+
+on: 
+  schedule:
+    - cron: "0 2 * * *"
+
+permissions: 
+  contents: read
+  issues: write
+  pull_requests: read
+
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Generate Report
+        run: |
+          echo '{ "summary": "Daily Status...", "Links": [] }' > report.json
+
+      - name: Upload Report Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: repo-status-report
+          path: report.json
+
+      - name: Create Issue (Controlled Output)
+        run: |
+          echo "Create Issue FROM report.json"

@@ -1,0 +1,17 @@
+\# File: .github/workflows/security-validate.yml
+
+name: Secutity Validation
+
+on:
+
+    workflow_rum:
+        workflows: [CI Validation]
+        types: [complete]
+    
+    jobs:
+        validate:
+            runs-on: ubuntu-latest
+            steps:
+                \- run: echo "Run Security Validation Here."
+    
+
